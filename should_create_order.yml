@@ -3,18 +3,13 @@ request:
   url: /orders
   headers:
     Content-Type: application/json
-  body: |
-    {
-      "productId": 11,
-      "quantity": 10
-    }
-  matchers:
-    body:
-    - path: $.productId
-      type: by_regex
-      value: "[0-9]+"
-    - path: $.quantity
-      type: by_regex
-      value: "[0-9]+"
+  body:
+    productId: 1
+    quantity: 10
+    totalPrice: 100
+    address: address
+    phoneNumber: 110
 response:
   status: 201
+  body:
+    productId: 1
