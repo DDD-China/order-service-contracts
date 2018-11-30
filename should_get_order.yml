@@ -1,0 +1,14 @@
+request:
+  method: GET
+  url: /orders/1
+response:
+  headers:
+    Content-Type: application/json;charset=UTF-8
+  status: 200
+  body:
+    productId: 1
+    quantity: 10
+    totalPrice: 100
+    address: address001
+    phoneNumber: 110
+    paid: true
